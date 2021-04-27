@@ -31,3 +31,10 @@ function changeOptionType(that, type) {
     $('.taskPopup-right-inner').removeClass('active')
     $('.taskPopup-right-inner[data-right="'+type+'"]').addClass('active')
 }
+
+function changeCreateType(that, type) {
+    $('.taskPopup-create-item').removeClass('active')
+    $(that).addClass('active')
+    $('.taskPopup-create-task').removeClass('active')
+    $('.taskPopup-create-task[data-task="'+type+'"]').addClass('active')
+}

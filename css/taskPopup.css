@@ -114,6 +114,7 @@
     font-size: 12px;
     line-height: 14px;
     text-decoration: none !important;
+    font-weight: 400;
 }
 
 .taskPopup-top-btn svg{
@@ -338,7 +339,7 @@
     background: #FFFFFF;
     box-shadow: 0px 0px 7px rgba(80, 129, 233, 0.28);
     border-radius: 12px;
-    padding: 13px 7px 9px 11px;
+    padding: 9px 7px 9px 11px;
     margin-left: -10px;
     margin-right: -15px;
 }
@@ -361,11 +362,19 @@
     color: #BDCAE2;
 }
 
+.taskPopup-comments-title{
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
 .taskPopup-comments-send{
     border: 1px solid #E7F3FF;
     box-sizing: border-box;
     border-radius: 7px;
-    padding: 4px 10px 7px;
+    padding: 4px 10px 4px;
     font-size: 12px;
     line-height: 14px;
     color: #5081E9;
@@ -438,4 +447,296 @@
     line-height: 15px;
     margin-top: 6px;
     color: #000000;
+    max-width: 240px;
 }
+
+.taskPopup-create{
+
+}
+
+.taskPopup-create-items{
+
+}
+
+.taskPopup-create-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+    padding-left: 10px;
+}
+
+.taskPopup-create-txt{
+    font-size: 17px;
+    line-height: 20px;
+    color: #5081E9;
+    font-weight: 400;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.taskPopup-create-item svg path,
+.taskPopup-create-item svg path{
+    transition: 0.3s;
+}
+
+.taskPopup-create-item:hover,
+.taskPopup-create-item.active{
+    background: #5081E9;
+    box-shadow: 0px 0px 8px rgba(80, 129, 233, 0.21);
+}
+
+.taskPopup-create-item:hover svg path,
+.taskPopup-create-item.active svg path{
+    fill: white;
+}
+
+.taskPopup-create-item:hover .taskPopup-create-txt,
+.taskPopup-create-item.active .taskPopup-create-txt{
+    color: white;
+}
+
+
+.taskPopup-create-task{
+    display: none;
+}
+
+.taskPopup-create-task.active{
+    display: block;
+}
+
+.taskPopup-create-task-title{
+    margin-top: -50px;
+    padding-bottom: 35px;
+}
+
+.taskPopup-create-task-title span:first-child{
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.taskPopup-create-task-title span:last-child{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #5081E9;
+    margin-left: 10px;
+}
+
+.taskPopup-create-task-content{
+
+}
+
+.taskPopup-create-task-form{
+
+}
+
+.taskPopup-create-task-form textarea{
+    background: #FFFFFF;
+    border: 1px solid #6B6B6B;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 15px 25px;
+    width: 100%;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 400;
+    min-height: 140px;
+}
+
+.taskPopup-create-task-form textarea::placeholder{
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 400;
+    color: #A9B7CF;
+}
+
+.taskPopup-create-task-radio{
+    margin-top: 35px;
+}
+
+.taskPopup-create-task-radio-label{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.taskPopup-create-task-radio-input{
+    display: none;
+}
+
+.taskPopup-create-task-radio-label span:first-child{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.taskPopup-create-task-radio-span{
+    margin-left: 10px;
+    background: #FFFFFF;
+    border: 1px solid #6B6B6B;
+    box-sizing: border-box;
+    border-radius: 40px;
+    width: 110px;
+    height: 25px;
+    position: relative;
+}
+
+.taskPopup-create-task-radio-span:before{
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: #FF0505;
+    border-radius: 20px;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    transition: 0.3s;
+}
+
+.taskPopup-create-task-radio-span:after{
+    content: "Высокий";
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    position: absolute;
+    top: 5px;
+    left: 36px;
+    transition: 0.3s;
+}
+
+.taskPopup-create-task-radio-input:checked + .taskPopup-create-task-radio-span:before{
+    width: 18px;
+    height: 18px;
+    background: #5081E9;
+    border-radius: 20px;
+    position: absolute;
+    top: 3px;
+    left: 85px;
+}
+
+.taskPopup-create-task-radio-input:checked + .taskPopup-create-task-radio-span:after{
+    content: "Нормальный";
+    left: 7px;
+}
+
+.taskPopup-create-task-txt{
+    margin-top: 18px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+}
+
+.taskPopup-create-btns{
+    display: flex;
+    align-items: center;
+}
+
+.taskPopup-create-btn{
+    border-radius: 6px;
+    height: 38px;
+    padding: 10px;
+    margin-top: 25px;
+}
+.taskPopup-create-btn:first-child{
+    background: #5081E9;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    box-shadow: 0px 0px 12px rgba(80, 129, 233, 0.6);
+}
+
+.taskPopup-create-btn:last-child{
+    margin-left: 20px;
+    border: 2px solid #FF7070;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 10px;
+    text-align: center;
+    color: #FF7070;
+}
+
+.taskPopup-create-radio-type{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.taskPopup-create-radio-title{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #000000;
+    margin-right: 30px;
+}
+
+.taskPopup-create-radio-type-item{
+    margin-right: 20px;
+}
+
+.taskPopup-create-radio-type-item:last-child{
+    margin-right: 0;
+}
+
+.taskPopup-create-radio-type-item input{
+    display: none;
+}
+
+.taskPopup-create-radio-type-label{
+    border: 1px solid #D1D8E5;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 9px 18px 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 0;
+    color: #000000;
+}
+
+.taskPopup-create-radio-type-item input:checked + .taskPopup-create-radio-type-label{
+    background: #5081E9;
+    box-shadow: 0px 0px 12px rgba(80, 129, 233, 0.6);
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.taskPopup-create-files{
+    margin-top: 20px;
+}
+
+.taskPopup-create-files-title{
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.taskPopup-create-files-block{
+
+}
+
+.taskPopup-create-files-type{
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.taskPopup-create-files + .taskPopup-create-task-radio{
+    margin-top: 20px;
+}
+
