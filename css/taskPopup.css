@@ -725,7 +725,7 @@
 }
 
 .taskPopup-create-files-block{
-
+    background: url("../img/drag-drop.png") center center no-repeat;
 }
 
 .taskPopup-create-files-type{
@@ -738,5 +738,49 @@
 
 .taskPopup-create-files + .taskPopup-create-task-radio{
     margin-top: 20px;
+}
+
+.taskPopup-create-calendar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.taskPopup-create-calendar-title{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.taskPopup-create-calendar-item input{
+    border: 1px solid #6B6B6B;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+    font-weight: 400;
+    width: 450px;
+    background: white url('../img/calendar.svg') 97% 9px no-repeat;
+    cursor: pointer;
+}
+
+.taskPopup-create-calendar-calc{
+    font-size: 13px;
+    line-height: 15px;
+    text-align: right;
+    color: #000000;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+.taskPopup-create-calendar-calc span{
+    color: #5081E9;
+}
+
+.taskPopup-create-calendar + textarea{
+    margin-top: 30px;
 }
 
