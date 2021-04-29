@@ -152,4 +152,6 @@ $(document).ready(function () {
             "firstDay": 1
         }
     });
+
+    $('.taskPopup-select').select2();
 });
