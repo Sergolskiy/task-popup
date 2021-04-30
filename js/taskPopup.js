@@ -39,6 +39,22 @@ function changeCreateType(that, type) {
     $('.taskPopup-create-task[data-task="'+type+'"]').addClass('active')
 }
 
+function changeClarification(that) {
+    if($(that).hasClass('showFields')){
+        $('.fields-clarification').show()
+    } else {
+        $('.fields-clarification').hide()
+    }
+}
+
+function changeForwarding(that) {
+    if($(that).hasClass('showForwarding')){
+        $('.fields-forwarding').show()
+    } else {
+        $('.fields-forwarding').hide()
+    }
+}
+
 $(document).ready(function () {
     let today = moment()
     let lastDay = moment(today.format('MM/DD/YYYY'), "MM/DD/YYYY").add(10, 'days');
@@ -154,4 +170,12 @@ $(document).ready(function () {
     });
 
     $('.taskPopup-select').select2();
+
+    $('input[type="radio"][name="сlarification"]').click(function (){
+
+    })
+
+    $('#сlarification3').click(function (){
+
+    })
 });
